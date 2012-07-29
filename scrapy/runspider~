@@ -1,0 +1,4 @@
+#! /bin/sh
+
+now=$(date +"%m_%d_%Y")
+scrapy crawl CoC -o "../data/cards-$now.json" -t json
