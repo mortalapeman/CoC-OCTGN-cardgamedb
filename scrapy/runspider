@@ -1,5 +1,5 @@
 #! /bin/sh
 
-now=$(date +"%m_%d_%Y")
+now=$(date +"%m-%d-%Y")
 scrapy crawl CoC -o "../data/cards-$now.json" -t json
 echo "Finished scraping!"
