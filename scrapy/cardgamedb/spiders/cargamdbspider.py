@@ -6,8 +6,6 @@ from scrapy.http import Request
 from scrapy.utils.url import urlparse
 from ..items import CardgamedbItem
 
-from IPython.core.debugger import Tracer; _bp = Tracer()
-
 class ParsingHelper:
     
     def parse_li(self, hxs, spider):
@@ -48,6 +46,9 @@ class ParsingHelper:
         item['faction'] = self.filter_value('Faction:', text)
         item['specialattribute'] = self.filter_value('Special Attribute:', text)
         item['symbols'] = self.filter_value('Symbols:', text)
+        item['struggleicons'] = self.filter_value('Struggle Icons:', text)
+        #TODO Fix these functions so there are more readable and show more of
+        # what they are suppose to be doing.
         def get_subtype(text):
             matches = [re.search(r'<b><i>([^<>]+)</i></b>', x) for x in text]
             matches = [x for x in matches if x]
