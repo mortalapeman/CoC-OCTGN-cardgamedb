@@ -3,8 +3,7 @@ Disclaimer
 
 This project is currently not intended to be installed or used by anyone but
 the author. However you are free to download the source code and figure out
-how to use it your self. Feel free to email me at mortalapeman@gmail.com if
-you have any intelligent questions.
+how to use it your self.
 
 CoC-OCTGN-cardgamedb
 ====================
